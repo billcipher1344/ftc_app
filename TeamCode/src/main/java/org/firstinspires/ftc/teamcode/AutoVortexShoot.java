@@ -30,6 +30,7 @@ public class AutoVortexShoot extends OpMode {
 
     private StateMachine main;
 
+
     //Parameters
     private double delay = 0;
 
