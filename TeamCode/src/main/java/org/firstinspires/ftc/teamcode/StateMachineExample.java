@@ -9,17 +9,20 @@ import org.firstinspires.ftc.teamcode.modules.State;
 import org.firstinspires.ftc.teamcode.modules.StateMachine;
 
 public class StateMachineExample extends OpMode {
+//motors
     private DcMotor leftDrive, rightDrive;
     private DcMotor lift;
-
+//sensor
     private TouchSensor liftLimit;
-
+//initialize SM
     private StateMachine driveSM;
+//wot
     private long driveTarget;
-
+//another SM
     private StateMachine liftSM;
+//what is long
     private long liftTarget;
-
+//another SM
     private StateMachine autonomous;
 
     @Override
@@ -37,6 +40,7 @@ public class StateMachineExample extends OpMode {
 
         //Initialize state machines
         driveSM = new StateMachine(
+                //at the beginning
                 new State("stop") {
                     @Override
                     public void run() {
@@ -44,6 +48,7 @@ public class StateMachineExample extends OpMode {
                         rightDrive.setPower(0.00);
                     }
                 },
+                //driving to a position
                 new State("driveToPos") {
                     @Override
                     public void run() {

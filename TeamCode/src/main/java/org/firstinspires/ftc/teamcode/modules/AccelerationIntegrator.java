@@ -39,6 +39,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.Acceleration;
 import org.firstinspires.ftc.robotcore.external.navigation.Position;
 import org.firstinspires.ftc.robotcore.external.navigation.Velocity;
 
+import static com.google.blocks.ftcrobotcontroller.util.HardwareType.BNO055IMU;
 import static org.firstinspires.ftc.robotcore.external.navigation.NavUtil.meanIntegrate;
 import static org.firstinspires.ftc.robotcore.external.navigation.NavUtil.plus;
 
